@@ -9,12 +9,420 @@
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
-
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
+    min-inline-size: 320px;
+    min-block-size: 100dvb;
+    font-family: var(--main-font), sans-serif;
+    font-variation-settings: "wght" 400;
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: var(--main-gradient);
+}
+
+.header {
+    display: grid;
+    justify-items: center;
+    background-color: var(--background-color);
+    border: 2px solid var(--accent-color);
+    margin: 100px auto 100px;
+    padding-block: clamp(7.5rem, 6.786rem + 1.905vw, 8.5rem) 23px;
+}
+
+.rubber-width {
+    width: var(--rubber-width);
+}
+
+.header__title {
+    font-family: var(--accent-font);
+    text-transform: uppercase;
+    font-size: var(--size-title);
+}
+
+.header__text {
+    font-family: var(--accent-font);
+    text-transform: uppercase;
+    font-size: var(--size-text);
+    padding-block: 20px 24px;
+}
+
+.theme-menu__list {
+    display: grid;
+    gap: 12px;
+    justify-items: start;
+    margin-inline-start: 20px;
+}
+
+.theme-menu__button {
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    font-family: var(--accent-font);
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.theme-menu__button:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+    transition-timing-function: ease;
+}
+
+.theme-menu__button:not(:disabled) {
+    position: relative;
+}
+
+.theme-menu__button:not(:disabled):focus-visible {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.theme-menu__button:not(:disabled)::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 5px;
+    top: 15px;
+    width: 85%;
+    height: 2px;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.theme-menu__button:not(:disabled):focus-visible::after {
+    transform: scale(1, 1);
+    background-color: var(--accent-color);
+}
+
+.theme-menu__button:disabled {
+    gap: 6px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+@keyframes arrow {
+    0% {
+        left: -13px;
+    }
+    100% {
+        left: -17px;
+    }
+}
+
+.theme-menu__button:disabled::before {
+    content: '▶';
+    position: absolute;
+    top: 1px;
+    animation: arrow 0.5s infinite alternate ease-in-out;
+}
+
+.card {
+    display: grid;
+    gap: 50px;
+    justify-items: center;
+}
+
+.sprint {
+    background-color: var(--background-color);
+    display: grid;
+    justify-items: start;
+    border: 2px solid var(--accent-color);
+}
+
+.card__title {
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-variation-settings: 'wght' 700;
+    padding: 5px 10px 5px 10px;
+}
+
+.border-image {
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    border-block-start: 3px solid var(--accent-color);
+    border-block-end: 3px solid var(--accent-color);
+    overflow: hidden;
+    width: 100%;
+    height: clamp(23.375rem, 8.866rem + 38.69vw, 43.688rem);
+}
+
+.card__image-text {
+    font-family: var(--accent-font);
+    font-size: 14px;
+    color: var(--accent-color);
+    position: absolute;
+    text-shadow: -1px 0px var(--color-stoke), 0px -1px var(--color-stoke), 1px 0px var(--color-stoke), 0px 1px var(--color-stoke);
+    right: 11px;
+    top: 23px;
+    mix-blend-mode: hard-light;
+    opacity: 0.8;
+}
+
+.card__image {
+    width: 100%;
+    height: 100%;
+}
+
+.card__text {
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-variation-settings: 'wght' 400;
+    padding-inline: 24px 25px;
+    padding-block-start: 26px;
+    line-height: 21px;
+    letter-spacing: 0px;
+}
+
+.card__text:last-of-type {
+    padding-block: 27px 25px;
+}
+
+.card__like {
+    display: flex;
+    gap: 6px;
+    margin-block-end: 25px;
+    margin-inline-start: auto;
+}
+
+.card__icon-button {
+    background-color: transparent;
+    cursor: pointer;
+    padding-inline: 0px;
+    height: 38px;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.card__icon-button:focus-visible {
+    border: 2px solid var(--accent-color);
+}
+
+.card__like-button {
+    position: relative;
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    font-family: var(--accent-font);
+    font-size: 14px;
+    padding-inline: 35px;
+    max-height: 38px;
+    margin-inline-end: 24px;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.button__text {
+    color: var(--text-like-color);
+    mix-blend-mode: difference;
+    position: relative;
+    z-index: 1;
+}
+
+.card__like-button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    z-index: 0;
+    background-color: var(--accent-color);
+}
+
+.card__like-button:hover::after {
+    transform: scale(1, 1);
+}
+
+.card__like-button:focus-visible {
+    box-shadow: 2px 2px 0px var(--accent-color);
+}
+
+.one-sprint-clear__image {
+    filter: sepia(0.6) grayscale(40%);
+}
+
+.one-sprint-work__image {
+    filter: blur(0px) saturate(3);
+}
+
+.two-sprint-chase__image {
+    filter: brightness(0.8) hue-rotate(25deg) saturate(1.5);
+}
+
+.two-sprint-near__image {
+    filter: invert(1) contrast(0.6);
+}
+
+.three-sprint-strategy__image {
+    filter: sepia(0.9);
+}
+
+.three-sprint-hands__image {
+    filter: blur(11px);
+}
+
+.now-sprint__image {
+    filter: hue-rotate(103deg) saturate(2) contrast(0.4);
+}
+
+.footer {
+    display: grid;
+    justify-items: center;
+}
+
+.svg__block {
+    height: 27px;
+    width: 29px;
+}
+
+.footer__svg {
+    height: 44px;
+    width: 41px;
+}
+
+.footer__buttton {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    gap: 0px;
+    cursor: pointer;
+    background-color: var(--background-color);
+    border: 2px solid var(--accent-color);
+    margin-block-start: 52px;
+    padding-block: 14px 9px;
+    padding-inline: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.footer__buttton:focus-visible {
+    box-shadow: 2px 2px 0px var(--accent-color);
+}
+
+.footer__svg {
+    position: relative;
+    z-index: 1;
+    color: var(--text-like-color);
+    mix-blend-mode: difference;
+}
+
+.footer__title {
+    position: relative;
+    z-index: 1;
+    color: var(--text-like-color);
+    mix-blend-mode: difference;
+    font-family: var(--accent-font);
+    font-size: 14px;
+}
+
+.footer__buttton::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    background-color: var(--accent-color);
+    z-index: 0;
+}
+
+.footer__buttton:hover::after {
+    transform: scale(1, 1);
+}
+
+#dialog_continue {
+    background-color: var(--background-color);
+    border: 2px solid var(--accent-color);
+    padding-block: 27px;
+    width: 341px;
+    height: 195px;
+}
+
+#dialog_continue::backdrop {
+    background-color: #000;
+    opacity: 0.75;
+}
+
+.dialog__block {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding-inline: 21px;
+    margin-block-end: 30px;
+}
+
+.dialog_svg-block {
+    width: 39px;
+    height: 39px;
+}
+
+.dialog__svg {
+    color: var(--accent-color);
+    width: 39px;
+    height: 39px;
+}
+
+.dialog__title {
+    color: var(--accent-color);
+    font-family: var(--accent-font);
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 150%;
+}
+
+.dialog__close {
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    font-family: var(--accent-font);
+    padding-inline: 117px;
+    padding-block: 9px;
+    margin-inline-start: 14px;
+    text-transform: uppercase;
+}
+
+@media (width <=375px) {
+    .card__text {
+        letter-spacing: 0.05px;
+    }
+    .card__like-button {
+        margin-inline-end: 26px;
+    }
+    .footer__buttton {
+        gap: 8px;
+        flex-direction: column;
+        padding-block: 14px;
+    }
+    .svg__block {
+        height: 28px;
+        width: 28px;
+    }
+    .footer__svg {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@supports((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
+    .card__image-text {
+        -webkit-text-stroke: 0.4px var(--color-stoke);
+        text-stroke: 0.4px var(--color-stoke);
+        text-shadow: none;
+    }
 }

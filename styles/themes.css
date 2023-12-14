@@ -4,3 +4,55 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+    --color-heart-contour: #00CC14;
+    --color-heart: #00CC14;
+    --text-like-color: #00CC14;
+    --title-weight-font: 785;
+    --text-weight-font: 465;
+    --background-color: #000;
+    --accent-color: #00CC14;
+    --color-stoke: #000;
+    --main-gradient: repeating-linear-gradient(to left, #007f0c 0px 2px, transparent 2px 4px), repeating-linear-gradient(to top, #007f0c 0px 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, #007f0c, #004306);
+}
+
+:root.theme-light {
+    --color-heart-contour: #000;
+    --color-heart: #000;
+    --text-like-color: #fff;
+    --title-weight-font: 700;
+    --text-weight-font: 400;
+    --background-color: #FFF;
+    --accent-color: #000;
+    --color-stoke: #fff;
+    --main-gradient: repeating-linear-gradient(to left, #e7e7e7 0px 2px, transparent 2px 4px), repeating-linear-gradient(to top, #e7e7e7 0px 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --color-heart-contour: #00CC14;
+        --color-heart: #00CC14;
+        --text-like-color: #00CC14;
+        --title-weight-font: 785;
+        --text-weight-font: 465;
+        --background-color: #000;
+        --accent-color: #00CC14;
+        --color-stoke: #000;
+        --main-gradient: repeating-linear-gradient(to left, #007f0c 0px 2px, transparent 2px 4px), repeating-linear-gradient(to top, #007f0c 0px 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, #007f0c, #004306);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+     :root {
+        --color-heart-contour: #000;
+        --color-heart: #000;
+        --text-like-color: #fff;
+        --title-weight-font: 700;
+        --text-weight-font: 400;
+        --background-color: #FFF;
+        --accent-color: #000;
+        --color-stoke: #fff;
+        --main-gradient: repeating-linear-gradient(to left, #e7e7e7 0px 2px, transparent 2px 4px), repeating-linear-gradient(to top, #e7e7e7 0px 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+    }
+}
