@@ -11,10 +11,10 @@
     --rubber-width: clamp(371px, 100%, 696px);
     --size-title: clamp(3.063rem, 2.348rem + 1.905vw, 4.063rem);
     --size-text: clamp(0.875rem, 0.473rem + 1.071vw, 1.438rem);
-    --main-gradient: repeating-linear-gradient(to left, #d3d3d3 0px 2px, transparent 2px 4px), repeating-linear-gradient(to top, #d3d3d3 0px 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3, transparent);
+    --main-gradient: repeating-linear-gradient(to left, #e7e7e7 0px 2px, transparent 2px 4px), repeating-linear-gradient(to top, #e7e7e7 0px 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
     --height-image: clamp(23.313rem, 8.759rem + 38.81vw, 43.688rem);
     --color-stoke: #fff;
     --color-heart-contour: #000;
-    --color-heart-body: transparent;
-    --color-heart-core: transparent;
+    --color-heart-body: #000;
+    --color-heart-core: #000;
 }

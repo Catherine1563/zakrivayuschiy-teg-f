@@ -21,8 +21,8 @@
 
 <body class="page">
     <header class="header rubber-width">
-        <h1 class="header__title">&lt;/html&gt;</h1>
-        <p class="header__text">закрывающий тег</p>
+        <a class="header__title">&lt;/html&gt;</a>
+        <h1 class="header__text">закрывающий тег</h1>
         <nav class="theme-menu header__theme-menu">
             <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
             <ul class="theme-menu__list">
@@ -49,7 +49,7 @@
             <article class="sprint rubber-width">
                 <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
                 <div class="border-image">
-                    <img src="./images/image.png" alt="car" class="card__image">
+                    <img src="./images/image.png" alt="машина" class="card__image">
                     <p class="card__image-text">&lt;/HTML&gt;</p>
                 </div>
                 <p class="card__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
@@ -57,69 +57,10 @@
                 <div class="card__like">
                     <button class="card__icon-button">
                         <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none"><g clip-path="url(#a)">
-                            <style>
-                                .like-icon .contour{
-                                    transition: fill 0.1s;
-                                }
-                                .like-icon .main-body{
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon .core{
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon:hover .main-body,
-                                .like-icon:hover .core{
-                                    --color-heart-body: #000;
-                                    --color-heart-core: #000;
-                                    
-                                }
-                                .like-icon:active .main-body,
-                                .like-icon:active .core{
-                                    --color-heart-body: red;
-                                    --color-heart-core: red;
-                                    
-                                }
-                                @keyframes scale-heart{
-                                    0%{
-                                        transform: scale(1);
-                                    }
-                                    100%{
-                                        transform: scale(1.5);
-                                    }
-                                }
-                                .like-icon.is-liked{
-                                    animation-delay: 0.1s;
-                                    animation: scale-heart 0.3s ease-in;
-                                }
-                                .like-icon.is-liked .core{
-                                    --color-heart-core: red;
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon.is-liked .main-body{
-                                    --color-heart-body: red;
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon.is-liked .contour{
-                                    --color-heart-contour: red;
-                                    transition: fill 0.3s 0.06s;
-                                }
-                                @keyframes sparks-heart{
-                                    0%{
-                                        fill: transparent;
-                                    }
-                                    100%{
-                                        fill: red;
-                                    }
-                                }
-                                .like-icon.is-liked .sparks{
-                                    animation-delay: 0.3s;
-                                    animation: sparks-heart 0.3s ease-in;
-                                }
-                            </style>
                             <g>
                             <path class="contour" fill='var(--color-heart-contour)' d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-                            <path class="main-body" fill="var(--color-heart-body)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-                            <path class="core" fill="var(--color-heart-core)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                            <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                            <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
                             </g>
                             <path class="sparks" fill="var(--color-heart-sparks)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/></g><defs><clipPath id="a">
                             <path fill="#fff" d="M0 0h39v36H0z"/></clipPath></defs>
@@ -131,7 +72,7 @@
             <article class="sprint rubber-width">
                 <h2 class="card__title">1 спринт: Я — чистый лист</h2>
                 <div class="border-image">
-                    <img src="./images/image.png" alt="car" class="card__image one-sprint-clear__image">
+                    <img src="./images/image.png" alt="коричневая" class="card__image one-sprint-clear__image">
                     <p class="card__image-text">&lt;/HTML&gt;</p>
                 </div>
                 <p class="card__text">На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением скрываются более глубокие
@@ -140,69 +81,10 @@
                 <div class="card__like">
                     <button class="card__icon-button">
                         <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none"><g clip-path="url(#a)">
-                            <style>
-                                .like-icon .contour{
-                                    transition: fill 0.1s;
-                                }
-                                .like-icon .main-body{
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon .core{
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon:hover .main-body,
-                                .like-icon:hover .core{
-                                    --color-heart-body: #000;
-                                    --color-heart-core: #000;
-                                    
-                                }
-                                .like-icon:active .main-body,
-                                .like-icon:active .core{
-                                    --color-heart-body: red;
-                                    --color-heart-core: red;
-                                    
-                                }
-                                @keyframes scale-heart{
-                                    0%{
-                                        transform: scale(1);
-                                    }
-                                    100%{
-                                        transform: scale(1.5);
-                                    }
-                                }
-                                .like-icon.is-liked{
-                                    animation-delay: 0.1s;
-                                    animation: scale-heart 0.3s ease-in;
-                                }
-                                .like-icon.is-liked .core{
-                                    --color-heart-core: red;
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon.is-liked .main-body{
-                                    --color-heart-body: red;
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon.is-liked .contour{
-                                    --color-heart-contour: red;
-                                    transition: fill 0.3s 0.06s;
-                                }
-                                @keyframes sparks-heart{
-                                    0%{
-                                        fill: transparent;
-                                    }
-                                    100%{
-                                        fill: red;
-                                    }
-                                }
-                                .like-icon.is-liked .sparks{
-                                    animation-delay: 0.3s;
-                                    animation: sparks-heart 0.3s ease-in;
-                                }
-                            </style>
                             <g>
                             <path class="contour" fill='var(--color-heart-contour)' d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-                            <path class="main-body" fill="var(--color-heart-body)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-                            <path class="core" fill="var(--color-heart-core)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                            <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                            <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
                             </g>
                             <path class="sparks" fill="var(--color-heart-sparks)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/></g><defs><clipPath id="a">
                             <path fill="#fff" d="M0 0h39v36H0z"/></clipPath></defs>
@@ -214,7 +96,7 @@
             <article class="sprint rubber-width">
                 <h2 class="card__title">1 спринт: А если не получится?</h2>
                 <div class="border-image">
-                    <img src="./images/image.png" alt="car" class="card__image one-sprint-work__image">
+                    <img src="./images/image.png" alt="контрасная" class="card__image one-sprint-work__image">
                     <p class="card__image-text">&lt;CSS&gt;</p>
                 </div>
                 <p class="card__text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.</p>
@@ -222,69 +104,10 @@
                 <div class="card__like">
                     <button class="card__icon-button">
                         <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none"><g clip-path="url(#a)">
-                            <style>
-                                .like-icon .contour{
-                                    transition: fill 0.1s;
-                                }
-                                .like-icon .main-body{
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon .core{
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon:hover .main-body,
-                                .like-icon:hover .core{
-                                    --color-heart-body: #000;
-                                    --color-heart-core: #000;
-                                    
-                                }
-                                .like-icon:active .main-body,
-                                .like-icon:active .core{
-                                    --color-heart-body: red;
-                                    --color-heart-core: red;
-                                    
-                                }
-                                @keyframes scale-heart{
-                                    0%{
-                                        transform: scale(1);
-                                    }
-                                    100%{
-                                        transform: scale(1.5);
-                                    }
-                                }
-                                .like-icon.is-liked{
-                                    animation-delay: 0.1s;
-                                    animation: scale-heart 0.3s ease-in;
-                                }
-                                .like-icon.is-liked .core{
-                                    --color-heart-core: red;
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon.is-liked .main-body{
-                                    --color-heart-body: red;
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon.is-liked .contour{
-                                    --color-heart-contour: red;
-                                    transition: fill 0.3s 0.06s;
-                                }
-                                @keyframes sparks-heart{
-                                    0%{
-                                        fill: transparent;
-                                    }
-                                    100%{
-                                        fill: red;
-                                    }
-                                }
-                                .like-icon.is-liked .sparks{
-                                    animation-delay: 0.3s;
-                                    animation: sparks-heart 0.3s ease-in;
-                                }
-                            </style>
                             <g>
                             <path class="contour" fill='var(--color-heart-contour)' d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-                            <path class="main-body" fill="var(--color-heart-body)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-                            <path class="core" fill="var(--color-heart-core)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                            <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                            <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
                             </g>
                             <path class="sparks" fill="var(--color-heart-sparks)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/></g><defs><clipPath id="a">
                             <path fill="#fff" d="M0 0h39v36H0z"/></clipPath></defs>
@@ -296,7 +119,7 @@
             <article class="sprint rubber-width">
                 <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
                 <div class="border-image">
-                    <img src="./images/image.png" alt="car" class="card__image two-sprint-chase__image">
+                    <img src="./images/image.png" alt="фиолетавая" class="card__image two-sprint-chase__image">
                     <p class="card__image-text">&lt;desigions&gt;</p>
                 </div>
                 <p class="card__text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены перфекционизму и вместо того,
@@ -305,69 +128,10 @@
                 <div class="card__like">
                     <button class="card__icon-button">
                         <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none"><g clip-path="url(#a)">
-                            <style>
-                                .like-icon .contour{
-                                    transition: fill 0.1s;
-                                }
-                                .like-icon .main-body{
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon .core{
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon:hover .main-body,
-                                .like-icon:hover .core{
-                                    --color-heart-body: #000;
-                                    --color-heart-core: #000;
-                                    
-                                }
-                                .like-icon:active .main-body,
-                                .like-icon:active .core{
-                                    --color-heart-body: red;
-                                    --color-heart-core: red;
-                                    
-                                }
-                                @keyframes scale-heart{
-                                    0%{
-                                        transform: scale(1);
-                                    }
-                                    100%{
-                                        transform: scale(1.5);
-                                    }
-                                }
-                                .like-icon.is-liked{
-                                    animation-delay: 0.1s;
-                                    animation: scale-heart 0.3s ease-in;
-                                }
-                                .like-icon.is-liked .core{
-                                    --color-heart-core: red;
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon.is-liked .main-body{
-                                    --color-heart-body: red;
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon.is-liked .contour{
-                                    --color-heart-contour: red;
-                                    transition: fill 0.3s 0.06s;
-                                }
-                                @keyframes sparks-heart{
-                                    0%{
-                                        fill: transparent;
-                                    }
-                                    100%{
-                                        fill: red;
-                                    }
-                                }
-                                .like-icon.is-liked .sparks{
-                                    animation-delay: 0.3s;
-                                    animation: sparks-heart 0.3s ease-in;
-                                }
-                            </style>
                             <g>
                             <path class="contour" fill='var(--color-heart-contour)' d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-                            <path class="main-body" fill="var(--color-heart-body)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-                            <path class="core" fill="var(--color-heart-core)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                            <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                            <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
                             </g>
                             <path class="sparks" fill="var(--color-heart-sparks)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/></g><defs><clipPath id="a">
                             <path fill="#fff" d="M0 0h39v36H0z"/></clipPath></defs>
@@ -379,7 +143,7 @@
             <article class="sprint rubber-width">
                 <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
                 <div class="border-image">
-                    <img src="./images/image.png" alt="car" class="card__image two-sprint-near__image">
+                    <img src="./images/image.png" alt="негативная" class="card__image two-sprint-near__image">
                     <p class="card__image-text">care</p>
                 </div>
                 <p class="card__text">Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно пожаловаться, если очередной макет просто так
@@ -388,69 +152,10 @@
                 <div class="card__like">
                     <button class="card__icon-button">
                         <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none"><g clip-path="url(#a)">
-                            <style>
-                                .like-icon .contour{
-                                    transition: fill 0.1s;
-                                }
-                                .like-icon .main-body{
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon .core{
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon:hover .main-body,
-                                .like-icon:hover .core{
-                                    --color-heart-body: #000;
-                                    --color-heart-core: #000;
-                                    
-                                }
-                                .like-icon:active .main-body,
-                                .like-icon:active .core{
-                                    --color-heart-body: red;
-                                    --color-heart-core: red;
-                                    
-                                }
-                                @keyframes scale-heart{
-                                    0%{
-                                        transform: scale(1);
-                                    }
-                                    100%{
-                                        transform: scale(1.5);
-                                    }
-                                }
-                                .like-icon.is-liked{
-                                    animation-delay: 0.1s;
-                                    animation: scale-heart 0.3s ease-in;
-                                }
-                                .like-icon.is-liked .core{
-                                    --color-heart-core: red;
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon.is-liked .main-body{
-                                    --color-heart-body: red;
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon.is-liked .contour{
-                                    --color-heart-contour: red;
-                                    transition: fill 0.3s 0.06s;
-                                }
-                                @keyframes sparks-heart{
-                                    0%{
-                                        fill: transparent;
-                                    }
-                                    100%{
-                                        fill: red;
-                                    }
-                                }
-                                .like-icon.is-liked .sparks{
-                                    animation-delay: 0.3s;
-                                    animation: sparks-heart 0.3s ease-in;
-                                }
-                            </style>
                             <g>
                             <path class="contour" fill='var(--color-heart-contour)' d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-                            <path class="main-body" fill="var(--color-heart-body)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-                            <path class="core" fill="var(--color-heart-core)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                            <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                            <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
                             </g>
                             <path class="sparks" fill="var(--color-heart-sparks)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/></g><defs><clipPath id="a">
                             <path fill="#fff" d="M0 0h39v36H0z"/></clipPath></defs>
@@ -462,7 +167,7 @@
             <article class="sprint rubber-width">
                 <h2 class="card__title">3 спринт: Обходные стратегии</h2>
                 <div class="border-image">
-                    <img src="./images/image.png" alt="car" class="card__image three-sprint-strategy__image">
+                    <img src="./images/image.png" alt="темная" class="card__image three-sprint-strategy__image">
                     <p class="card__image-text">&lt;support&gt;</p>
                 </div>
                 <p class="card__text">На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.</p>
@@ -470,69 +175,10 @@
                 <div class="card__like">
                     <button class="card__icon-button">
                         <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none"><g clip-path="url(#a)">
-                            <style>
-                                .like-icon .contour{
-                                    transition: fill 0.1s;
-                                }
-                                .like-icon .main-body{
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon .core{
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon:hover .main-body,
-                                .like-icon:hover .core{
-                                    --color-heart-body: #000;
-                                    --color-heart-core: #000;
-                                    
-                                }
-                                .like-icon:active .main-body,
-                                .like-icon:active .core{
-                                    --color-heart-body: red;
-                                    --color-heart-core: red;
-                                    
-                                }
-                                @keyframes scale-heart{
-                                    0%{
-                                        transform: scale(1);
-                                    }
-                                    100%{
-                                        transform: scale(1.5);
-                                    }
-                                }
-                                .like-icon.is-liked{
-                                    animation-delay: 0.1s;
-                                    animation: scale-heart 0.3s ease-in;
-                                }
-                                .like-icon.is-liked .core{
-                                    --color-heart-core: red;
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon.is-liked .main-body{
-                                    --color-heart-body: red;
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon.is-liked .contour{
-                                    --color-heart-contour: red;
-                                    transition: fill 0.3s 0.06s;
-                                }
-                                @keyframes sparks-heart{
-                                    0%{
-                                        fill: transparent;
-                                    }
-                                    100%{
-                                        fill: red;
-                                    }
-                                }
-                                .like-icon.is-liked .sparks{
-                                    animation-delay: 0.3s;
-                                    animation: sparks-heart 0.3s ease-in;
-                                }
-                            </style>
                             <g>
                             <path class="contour" fill='var(--color-heart-contour)' d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-                            <path class="main-body" fill="var(--color-heart-body)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-                            <path class="core" fill="var(--color-heart-core)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                            <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                            <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
                             </g>
                             <path class="sparks" fill="var(--color-heart-sparks)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/></g><defs><clipPath id="a">
                             <path fill="#fff" d="M0 0h39v36H0z"/></clipPath></defs>
@@ -544,7 +190,7 @@
             <article class="sprint rubber-width">
                 <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
                 <div class="border-image">
-                    <img src="./images/image.png" alt="car" class="card__image three-sprint-hands__image">
+                    <img src="./images/image.png" alt="блюр" class="card__image three-sprint-hands__image">
                     <p class="card__image-text">&lt;lifes-style: none;&gt;</p>
                 </div>
                 <p class="card__text">Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты очень нужна концентрация. Вспомните,
@@ -553,69 +199,10 @@
                 <div class="card__like">
                     <button class="card__icon-button">
                         <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none"><g clip-path="url(#a)">
-                            <style>
-                                .like-icon .contour{
-                                    transition: fill 0.1s;
-                                }
-                                .like-icon .main-body{
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon .core{
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon:hover .main-body,
-                                .like-icon:hover .core{
-                                    --color-heart-body: #000;
-                                    --color-heart-core: #000;
-                                    
-                                }
-                                .like-icon:active .main-body,
-                                .like-icon:active .core{
-                                    --color-heart-body: red;
-                                    --color-heart-core: red;
-                                    
-                                }
-                                @keyframes scale-heart{
-                                    0%{
-                                        transform: scale(1);
-                                    }
-                                    100%{
-                                        transform: scale(1.5);
-                                    }
-                                }
-                                .like-icon.is-liked{
-                                    animation-delay: 0.1s;
-                                    animation: scale-heart 0.3s ease-in;
-                                }
-                                .like-icon.is-liked .core{
-                                    --color-heart-core: red;
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon.is-liked .main-body{
-                                    --color-heart-body: red;
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon.is-liked .contour{
-                                    --color-heart-contour: red;
-                                    transition: fill 0.3s 0.06s;
-                                }
-                                @keyframes sparks-heart{
-                                    0%{
-                                        fill: transparent;
-                                    }
-                                    100%{
-                                        fill: red;
-                                    }
-                                }
-                                .like-icon.is-liked .sparks{
-                                    animation-delay: 0.3s;
-                                    animation: sparks-heart 0.3s ease-in;
-                                }
-                            </style>
                             <g>
                             <path class="contour" fill='var(--color-heart-contour)' d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-                            <path class="main-body" fill="var(--color-heart-body)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-                            <path class="core" fill="var(--color-heart-core)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                            <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                            <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
                             </g>
                             <path class="sparks" fill="var(--color-heart-sparks)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/></g><defs><clipPath id="a">
                             <path fill="#fff" d="M0 0h39v36H0z"/></clipPath></defs>
@@ -627,7 +214,7 @@
             <article class="sprint rubber-width">
                 <h2 class="card__title">«Сейчас я здесь»</h2>
                 <div class="border-image">
-                    <img src="./images/image.png" alt="car" class="card__image now-sprint__image">
+                    <img src="./images/image.png" alt="светлая" class="card__image now-sprint__image">
                     <p class="card__image-text">&lt;experience&gt;</p>
                 </div>
                 <p class="card__text">Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно меняется. Познать
@@ -636,69 +223,10 @@
                 <div class="card__like">
                     <button class="card__icon-button">
                         <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none"><g clip-path="url(#a)">
-                            <style>
-                                .like-icon .contour{
-                                    transition: fill 0.1s;
-                                }
-                                .like-icon .main-body{
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon .core{
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon:hover .main-body,
-                                .like-icon:hover .core{
-                                    --color-heart-body: #000;
-                                    --color-heart-core: #000;
-                                    
-                                }
-                                .like-icon:active .main-body,
-                                .like-icon:active .core{
-                                    --color-heart-body: red;
-                                    --color-heart-core: red;
-                                    
-                                }
-                                @keyframes scale-heart{
-                                    0%{
-                                        transform: scale(1);
-                                    }
-                                    100%{
-                                        transform: scale(1.5);
-                                    }
-                                }
-                                .like-icon.is-liked{
-                                    animation-delay: 0.1s;
-                                    animation: scale-heart 0.3s ease-in;
-                                }
-                                .like-icon.is-liked .core{
-                                    --color-heart-core: red;
-                                    transition: fill 0.3s 0.03s;
-                                }
-                                .like-icon.is-liked .main-body{
-                                    --color-heart-body: red;
-                                    transition: fill 0.3s 0.05s;
-                                }
-                                .like-icon.is-liked .contour{
-                                    --color-heart-contour: red;
-                                    transition: fill 0.3s 0.06s;
-                                }
-                                @keyframes sparks-heart{
-                                    0%{
-                                        fill: transparent;
-                                    }
-                                    100%{
-                                        fill: red;
-                                    }
-                                }
-                                .like-icon.is-liked .sparks{
-                                    animation-delay: 0.3s;
-                                    animation: sparks-heart 0.3s ease-in;
-                                }
-                            </style>
                             <g>
-                            <path class="contour" fill="var(--color-heart-contour)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-                            <path class="main-body" fill="var(--color-heart-body)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-                            <path class="core" fill="var(--color-heart-core)" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                            <path class="contour" fill='var(--color-heart-contour)' d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
+                            <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                            <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
                             </g>
                             <path class="sparks" fill="var(--color-heart-sparks)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/></g><defs><clipPath id="a">
                             <path fill="#fff" d="M0 0h39v36H0z"/></clipPath></defs>
@@ -711,32 +239,28 @@
     </main>
     <footer class="footer">
         <button class="footer__buttton" onclick="window['dialog_continue'].showModal();">
-            <div class="svg__block">
+            <span class="svg__block">
                 <svg viewBox="0 0 60 60" class="footer__svg">
-                    <use href="#floppy_1"></use>
+                    <use href="/svg/floppy.svg#floppy"></use>
                 </svg>
-            </div>
-            <h2 class="footer__title">Сохранить на память</h2>
+            </span>
+            <span class="footer__title">Сохранить на память</span>
         </button>
         <dialog id="dialog_continue">
             <div class="dialog__block">
                 <div class="dialog_svg-block">
                     <svg viewBox="0 0 30 30" class="dialog__svg">
-                        <use href="#floppy_1"></use>
+                        <use href="/svg/floppy.svg#floppy"></use>
                     </svg>
                 </div>
-                <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
+                <span class="dialog__title">Вставьте дискету, чтобы продолжить</span>
             </div>
-            <button class="dialog__close" onclick="window['dialog_continue'].close();">ок</button>
+            <form method="dialog">
+                <button type="submit" class="dialog__close"><span class="footer__title">ок</span></button>
+            </form>
         </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
 </body>
 
 </html>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" fill="none">
-    <symbol id="floppy_1" fill="currentColor">
-        <g><path d="M.5 0h2.154v2.154H.5zm0 2.154h2.154v2.154H.5zm0 2.154h2.154v2.154H.5zm0 2.154h2.154v2.154H.5z"/><path d="M.5 8.615h2.154v2.154H.5zm0 2.154h2.154v2.154H.5zm0 2.154h2.154v2.154H.5zm0 2.154h2.154v2.154H.5zm0 2.154h2.154v2.154H.5zm0 2.154h2.154v2.154H.5z"/><path d="M.5 21.538h2.154v2.154H.5zm0 2.154h2.154v2.154H.5zm0 2.154h2.154V28H.5zM24.193 0v2.154h-2.154V0z"/><path d="M22.04 0v2.154h-2.155V0zm-2.156 0v2.154H17.73V0zM17.73 0v2.154h-2.154V0z"/><path d="M15.577 0v2.154h-2.154V0zm-2.154 0v2.154H11.27V0zM11.27 0v2.154H9.115V0z"/><path d="M9.116 0v2.154H6.962V0zM6.96 0v2.154H4.808V0zM4.807 0v2.154H2.653V0zm21.539 2.154v2.154h-2.154V2.154zM6.96 4.308v2.154H4.808V4.308zm.001-2.154v2.154H4.807V2.154zM6.96 6.462v2.154H4.808V6.462zm15.079-2.154v2.154h-2.154V4.308zm.001-2.154v2.154h-2.155V2.154zm-.001 4.308v2.154h-2.154V6.462zM17.73 4.307v2.154h-2.154V4.307z"/><path d="M17.73 2.154v2.154h-2.153V2.154zm0 4.307v2.154h-2.154V6.461zm4.31 2.154v2.154h-2.155V8.615zm-2.156 0v2.154H17.73V8.615zm-2.154 0v2.154h-2.153V8.615zm-2.153 0v2.154h-2.154V8.615zm-2.154 0v2.154H11.27V8.615zm-2.153.001v2.154H9.116V8.616zm-2.154-.001v2.154H6.962V8.615zm-2.155 0v2.154H4.807V8.615zm17.232 6.462v2.154h-2.154v-2.154zm-2.154 0v2.154h-2.154v-2.154zm-2.155 0v2.154H17.73v-2.154zm-2.154-.001v2.154h-2.154v-2.154z"/><path d="M15.577 15.077v2.154h-2.154v-2.154zm-2.154 0v2.154h-2.154v-2.154z"/><path d="M11.27 15.077v2.154H9.114v-2.154z"/><path d="M9.116 15.077v2.154H6.962v-2.154zm-2.156 0v2.154H4.808v-2.154zm17.232 2.154v2.154h-2.154v-2.154z"/><path d="M6.96 17.23v2.155H4.808V17.23zm17.232 2.155v2.154h-2.154v-2.154zm-17.232 0v2.154H4.808v-2.154zm17.233 2.154v2.154h-2.154v-2.154z"/><path d="M6.961 21.538v2.154H4.807v-2.154zm0 2.154v2.154H4.807v-2.154zm17.232.001v2.154H22.04v-2.154z"/><path d="M26.346 25.846V28h-2.154v-2.154z"/><path d="M24.193 25.846V28h-2.154v-2.154zm-2.154 0V28h-2.154v-2.154zm-2.155 0V28H17.73v-2.154zm-2.154-.001V28h-2.154v-2.154z"/><path d="M15.577 25.846V28h-2.154v-2.154zm-2.154 0V28h-2.154v-2.154z"/><path d="M11.27 25.846V28H9.114v-2.154z"/><path d="M9.116 25.846V28H6.962v-2.154zm-2.156 0V28H4.808v-2.154zm-2.153 0V28H2.653v-2.154zM28.5 28h-2.154v-2.154H28.5zm0-2.154h-2.154v-2.154H28.5z"/><path d="M28.5 23.693h-2.154v-2.154H28.5zm0-2.154h-2.154v-2.154H28.5zm0-2.154h-2.154V17.23H28.5zm0-2.155h-2.154v-2.154H28.5z"/><path d="M28.5 15.077h-2.154v-2.154H28.5zm0-2.154h-2.154V10.77H28.5zm0-2.153h-2.154V8.616H28.5zm0-2.155h-2.154V6.461H28.5zm0-2.154h-2.154V4.307H28.5z"/></g>
-    </symbol>
-</svg>
